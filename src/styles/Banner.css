@@ -1,0 +1,12 @@
+.as-banner{
+  display: flex;
+  height: 130px;
+  justify-content: center;
+  align-items: center;
+  color : white;
+  background: blue;
+  align-items: center;
+  font-size: larger;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
