@@ -3,12 +3,13 @@ import {summitVideo} from "../datas/summit-videos"
 
 function RecentVideos() {
 
+  //retrieve the last video
   const lastVideo = summitVideo.reduce((acc, video) =>
     acc.date < video.date ? acc = video : acc = acc
    )
-
+  
+   //retrieve and sort descending all videos 
   const otherRecentVideo = summitVideo;
-
   otherRecentVideo.sort((a,b) =>{
     if (a.date>b.date) {
       return -1
@@ -17,6 +18,7 @@ function RecentVideos() {
     }
   })
 
+  //retrive three most rescent video whitout the last one retrieve and sort descending all videos
   const first3 = otherRecentVideo.slice(1,4)
 
   return(

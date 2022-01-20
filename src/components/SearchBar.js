@@ -2,8 +2,9 @@ import "../styles/SearchBar.css";
 import React from "react";
 import { summitVideo } from "../datas/summit-videos";
 import VideoCard from "./VideoCard";
-import RecentVideos from "./RecentVideos"
 
+//Use to show all the video sorted by some filter
+// all the logic of the code is here (should be separated into several pieces)
 class SearchBar extends React.Component{
   constructor({props}){
     super(props)
@@ -20,6 +21,7 @@ class SearchBar extends React.Component{
     }
 
     this.searchedText = "";
+    //retrieve all videos
     this.summitVideo = summitVideo.sort((a,b) =>{
       if (a.date>b.date) {
         return -1
@@ -30,7 +32,7 @@ class SearchBar extends React.Component{
   }
 
   
-  
+  //check and process all changes in the input
   _searchTextInputChanged(e) {
 
     this.searchedText = e.target.value.toString().toLowerCase()
@@ -46,6 +48,7 @@ class SearchBar extends React.Component{
     this.setState(() => ({ suggestion, text : e.target.value  }))
   }
 
+  //AutoComplete
   _renderSuggestion(){
     const {suggestion} = this.state;
     if (suggestion.length === 0 ){
@@ -64,6 +67,7 @@ class SearchBar extends React.Component{
     )
   }
 
+  //processes the action when a auto-complete suggestion is clicked
   _suggestionSelected(value){
     this.searchedText = value.toString().toLowerCase();
     this.setState(()=>({
@@ -72,20 +76,19 @@ class SearchBar extends React.Component{
     }))
   }
 
+  //action of the search button
   _searchVideo(){
     this.setState({ video: this.summitVideo.filter((video) => (
       video.title.toLowerCase().includes(this.searchedText)
     ))})
   }
 
+  //initialisation
   componentDidMount(){
     this.setState({ video: this.summitVideo})
   }
-
-  // componentDidUpdate(){
-  //   console.log(this.state.video)
-  // }
   
+  //checkbox filter
   _filterArrByTopic = (e) => {
     console.log( e.target)
     
