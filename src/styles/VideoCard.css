@@ -1,0 +1,18 @@
+.as-videoCard{
+  display: flex;
+  width: 250px;
+  margin: 7px;
+  background:rgb(214, 212, 212);
+  height: 200px;
+  align-items: flex-end;
+}
+
+.as-videoCard-info{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  height: 30%;
+  flex: 1;
+  flex-direction: row;
+  background :linear-gradient(to top, rgb(53, 95, 121), transparent);
+}
