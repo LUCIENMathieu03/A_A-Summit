@@ -8,13 +8,13 @@ class VideoCard extends React.Component {
 
   render(){
     return (
-      <div className="as-videoCard">
-
+      <a href={this.props.link} className="as-videoCard">
+          <embed src={this.props.link} className="as-videoCard-video" ></embed> 
         <div className="as-videoCard-info">
           <h2>{this.props.title}</h2>
           <p>{this.props.date}</p>
         </div>
-      </div>
+      </a>
       
     )
   }

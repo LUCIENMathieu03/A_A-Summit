@@ -1,5 +1,4 @@
 import '../styles/App.css';
-
 import Banner from './Banner';
 import RecentVideos from './RecentVideos';
 import SearchBar from './SearchBar'

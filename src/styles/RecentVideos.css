@@ -1,17 +1,20 @@
 /* will be reviewed*/
 .as-recentVideos{
   display: flex;
-  background-color: blue;
+  background-color: rgb(49, 137, 236);
   width: 100% ;
-  height: 35em;
+  height: 45em;
   color : white;
 }
 
 .as-recentVideos-left{
-  flex: 1.5;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  text-align: center; 
+  text-align: center;
+  justify-content: center;
+  margin: 10px;
+  
 }
 
 .as-recentVideos-right{
@@ -19,30 +22,43 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  margin: 10px;
 }
 
-.as-recentVideos-right ul{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 50px;
-  padding-left: 0px;
+
+
+.as-recentVideos-right ul a{
+ text-decoration: none;
+ color: black;
 }
 
 .as-lastOne{
-  flex: 1;
-  margin: 50px;
-  background-color: rgb(200, 198, 198);
   display: flex;
+  height: 500px;
   flex-direction: column;
-  justify-content: flex-end;
-  
+  justify-content: space-between;
+}
+
+.as-lastOne a {
+  text-decoration: none;
+}
+
+.as-lastOne-video{
+  width: 100%;
+  height: 400px;
+ 
 }
 
 .as-recentOne{
+  display: flex;
   margin-bottom: 10px;
   list-style-type: none;
-  background-color :rgb(214, 212, 212);
-  height: 118px ;
+}
+
+.as-recentOne-video{
+  width: 58%;
+  box-shadow: 3px 4px 4px 0px rgba(0,0,0,0.62);
 }
 
 .as-videoInfo{
@@ -52,12 +68,20 @@
   align-items: baseline;
   padding-left: 5%;
   padding-right: 5%;
-  background :linear-gradient(to top, rgb(53, 95, 121), transparent);
+  color: black;
+  background:rgb(243, 240, 240);
+  font-size: smaller;
+  box-shadow: 3px 4px 4px 0px rgba(0,0,0,0.62);
+  word-wrap: wrap;
 }
 
 .as-recentVideoinfo{
   width: 50%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  background: linear-gradient(to right, rgb(53, 95, 121), transparent);
+  background: rgb(243, 240, 240);
+  font-size: smaller;
+  word-wrap: wrap;
+  box-shadow: 3px 4px 4px 0px rgba(0,0,0,0.62);
 }
