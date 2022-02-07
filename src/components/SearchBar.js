@@ -1,6 +1,6 @@
 import "../styles/SearchBar.css";
 import React from "react";
-import { summitVideo } from "../datas/summit-videos";
+import { summitVideo } from "../datas/summit-inventory";
 import VideoCard from "./VideoCard";
 
 //Use to show all the video sorted by some filter
