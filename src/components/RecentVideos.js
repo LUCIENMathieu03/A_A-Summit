@@ -1,5 +1,5 @@
 import "../styles/RecentVideos.css";
-import {summitVideo} from "../datas/summit-inventory"
+import {summitVideo} from "../datas/summit-videos"
 
 function RecentVideos() {
 

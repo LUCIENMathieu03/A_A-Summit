@@ -22,8 +22,7 @@
   font-size: small;
   word-wrap: wrap;
   overflow-wrap: anywhere;
-  overflow: scroll;
-  padding: 5%
+  
 
 }
 
@@ -31,5 +30,4 @@
 .as-videoCard-info-title{
   overflow-wrap: anywhere;
   max-lines: 1;
-  padding-top: 5px;
 }

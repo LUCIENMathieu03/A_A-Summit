@@ -73,6 +73,7 @@
   font-size: smaller;
   box-shadow: 3px 4px 4px 0px rgba(0,0,0,0.62);
   word-wrap: wrap;
+  max-lines: 3;
 }
 
 .as-recentVideoinfo{
@@ -83,5 +84,6 @@
   background: rgb(243, 240, 240);
   font-size: smaller;
   word-wrap: wrap;
+  max-lines: 3;
   box-shadow: 3px 4px 4px 0px rgba(0,0,0,0.62);
 }
